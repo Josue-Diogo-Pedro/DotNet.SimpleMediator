@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DotNet.SimpleMediator.Interfaces
+﻿namespace DotNet.SimpleMediator.Interfaces
 {
-    class INotification
-    {
-    }
+    public interface INotification { }
 }

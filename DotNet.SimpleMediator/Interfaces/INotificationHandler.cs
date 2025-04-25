@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Threading;
+using System.Threading.Tasks;
 
 namespace DotNet.SimpleMediator.Interfaces
 {
-    class INotificationHandler
+    public interface INotificationHandler<TNotification> where TNotification : INotification
     {
+        Task Handle(INotification notification, CancellationToken cancellationToken);
     }
 }
